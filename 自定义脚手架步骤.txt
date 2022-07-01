@@ -1,0 +1,18 @@
+先来看看可能需要用到哪些npm的包：
+
+commander：参数解析
+inquirer：交互式命令行工具，有他就可以实现命令行的选择功能
+chalk：输出文本颜色，为了美丽~
+后续可能随着模块的增加，会出现更多需要的包
+
+win默认包安装目录：C:\Users\19376\AppData\Roaming\npm
+
+npm init -y
+
+新建bin文件夹，并在里面添加js文件
+在package.json中增加"bin":"./bin/文件名.js"
+
+js文件开头要写入#! node，npm link打包配置时需要
+npm link：链接包到全局（--force）
+
+然后直接输入，npm link，回车打包。
